@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototip web sjedišta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            border-bottom: 2px solid white;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            border-right: 2px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5em 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        section {
+            padding: 1em;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centriranje sadržaja */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 5px solid black;
+        }
+
+        .blog-box {
+            border: 2px solid #ddd;
+            padding: 10px;
+            margin: 20px;
+            text-align: left;
+            width: 90%;
+        }
+
+        .procitaj-vise {
+            background-color: lightblue;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            border-top: 2px solid white;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                border-right: none;
+            }
+
+            img {
+                width: 96%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sveučilište u Mostaru</h1>
+    </header>
+
+    <main>
+        <nav>
+            <a href="fsre.html">FSRE</a>
+            <a href="#">FPMOZ</a>
+            <a href="#">FF</a>
+            <a href="#">FE</a>
+        </nav>
+
+        <section>
+            <h2>Dobrodošli na Sveučilište SUM</h2>
+            <p>Sveučilište SUM predstavlja središte izvrsnosti u oblasti strojarstva, računarstva, elektrotehnike i mnogih drugih područja. Naša predanost kvalitetnom obrazovanju i istraživanju čini nas jednim od vodećih sveučilišta u regiji.</p>
+
+            <p>Na Sveučilištu SUM pružamo niz studijskih programa, uključujući Fakultet Strojarstva, računarstva i elektrotehnike (FSRE), Fakultet prirodoslovno-matematičkih i odgojnih znanosti (FPMOZ), Filozofski fakultet (FF), Fakultet elektrotehnike (FE) i mnoge druge.</p>
+
+            <p>Naši profesori i istraživači su stručnjaci u svojim područjima, a naša sveučilišna zajednica predstavlja raznolik skup studenata koji aktivno sudjeluju u raznim sveučilišnim inicijativama.</p>
+
+            <h2>Raspored nastave za Računarstvo 1. godina</h2>
+            <table>
+                <tr>
+                    <th>Dan</th>
+                    <th>Predmet</th>
+                    <th>Vrijeme</th>
+                </tr>
+                <tr>
+                    <td>Pon</td>
+                    <td>Matematika</td>
+                    <td>8:00 - 9:30</td>
+                </tr>
+                <tr>
+                    <td>Uto</td>
+                    <td>Fizika</td>
+                    <td>10:00 - 11:30</td>
+                </tr>
+                <tr>
+                    <td>Sri</td>
+                    <td>IWT i Programiranje 1</td>
+                    <td>9:00 - 10:30</td>
+                </tr>
+                <tr>
+                    <td>Sri</td>
+                    <td>Algoritmi i strukture</td>
+                    <td>11:00 - 12:30</td>
+                </tr>
+                <tr>
+                    <td>Čet</td>
+                    <td>Algoritmi i strukture</td>
+                    <td>13:00 - 14:30</td>
+                </tr>
+                <tr>
+                    <td>Pet</td>
+                    <td colspan="2">Slobodan dan</td>
+                </tr>
+            </table>
+
+            <h1>Pročitaj naše Blogove</h1>
+            <div class="blog-box">
+                <img src="download.png" alt="Blog 1">
+                <h2>Upis u 1. akademsku godinu.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi facilis totam sequi ea autem.</p>
+                <a href="#" class="procitaj-vise">Pročitaj više</a>
+            </div>
+
+            <div class="blog-box">
+                <img src="download.png" alt="Blog 2">
+                <h2>Otvoreni dani Fakulteta</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis officia provident minus excepturi sapiente molestias, tenetur in, tempora repellat consectetur dignissimos non rerum, reiciendis accusantium ullam voluptate deserunt numquam nostrum?</p>
+                <a href="#" class="procitaj-vise">Pročitaj više</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sveučilište SUM. Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>
